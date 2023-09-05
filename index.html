@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dice Roll by Amar E.</title>
 </head>
 <body>
     <h1>Random dice rolling in JavaScript</h1> <br><br>
     <label for="numberOfDice">Please enter number of dice:</label>
-    <input type="number" name="" id="numberOfDice" min="1" max="5"> <br>
+    <input type="number" name="" id="numberOfDice" min="1" max="10" placeholder="1 to 10"> <br>
     <label for="typeOfDice">What kind of dice do you wanna roll:</label>
     <select id="typeOfDice" name="cars">
         <option value="4">d4</option>
@@ -19,7 +19,9 @@
         <option value="20">d20</option>
     </select>
     <br><br>
-    <button id="submit">SUBMIT</button>
+    <button id="submit">SUBMIT</button> <br><br>
+    <label for="answer">Result(s):</label>
+    <input type="text" id="results" value="" readonly="readonly"/>
 
     <script src="script.js"></script>
 </body>
